@@ -19,12 +19,5 @@ class UserTest extends TestCase
 
         $response->assertStatus(200);
     }
-    public function test_user_count()
-    {
-        $response = $this->get('/api/users');
-
-        $count = 10;
-        $this->assertSame($response->toArray()->count(), $count);
-
-    }
+    
 }
